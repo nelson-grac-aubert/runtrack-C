@@ -1,3 +1,8 @@
+/* Dans un fichier char_is_digit.c, implémenter la fonction char_is_digit qui
+prend en paramètre un caractère et renvoie 1 si le caractère est un chiffre, et
+0 si ça n’en est pas un.
+int char_is_digit(char c); */
+
 #include <unistd.h>
 
 int char_is_digit(char c) {
