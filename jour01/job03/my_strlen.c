@@ -8,8 +8,11 @@ int my_strlen(char *c) {
     
     int len = 0;
 
+    // as long as the character is not \0 (ASCII value 0)
     while (*c != 0) {
+        // increment the counter
         len++;
+        // increment the character pointer across the string 
         c++; 
     }
     
