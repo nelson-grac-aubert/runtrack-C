@@ -7,11 +7,14 @@ int my_putchar(char c) {
     return 0;
 }
 
-void my_putstr(char *c) { 
+int my_putstr(char *c) { 
+    
     while (*c != 0) {
         my_putchar(*c);
         c++; 
     }
+
+    return 0;
 }
 
 int main() { 
