@@ -1,13 +1,14 @@
 #include <unistd.h>
 
-int my_putchar(char c) { 
-
+int my_putchar(char c)
+{
     write(1, &c, sizeof(c)); 
 
     return 0;
 }
 
-int main() { 
+int main() 
+{ 
 
     my_putchar('a');
     my_putchar(' ');
