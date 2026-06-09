@@ -11,3 +11,24 @@ les deux chaînes est inférieur (dans l’ordre de la table ASCII) dans la prem
 chaîne par rapport à celui de la deuxième chaîne. Par exemple, la chaîne
 “abc” est inférieure à la chaîne “abd” parce que les deux premiers caractères
 sont identiques, mais “c” est inférieur à “d” dans la table ASCII. */
+
+#include <stdio.h>
+
+int my_strcmp(char *string_a, char *string_b)
+{
+
+}
+
+int main() 
+{   
+
+    char inferior_string[] = "aaabfgh";
+    char inferior_string_two[] = "aaabfgh";
+    char superior_string[] = "aaac";
+
+    printf("Expected -1 : %d", my_strcmp(inferior_string, superior_string));
+    printf("Expected 1 : %d", my_strcmp(superior_string, inferior_string));
+    printf("Expected 0 : %d", my_strcmp(inferior_string, inferior_string));
+
+    return 0; 
+}
