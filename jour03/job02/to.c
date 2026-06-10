@@ -10,7 +10,7 @@ inverse la casse et doit être défini en utilisant les deux autres fonctions.
 
 Fonctions utilisées : aucune. */
 
-#include <stdio.h>
+#include "to.h"
 
 char to_lower(char c) 
 {   
@@ -41,21 +41,21 @@ char switch_case(char c)
     return c;
 } 
 
-int main()
-{   
-    char unchanged = ';';
-    char lower = 'a';
-    char lower_two = 'b';
-    char upper = 'A'; 
-    char upper_two = 'B';
+// int main()
+// {   
+//     char unchanged = ';';
+//     char lower = 'a';
+//     char lower_two = 'b';
+//     char upper = 'A'; 
+//     char upper_two = 'B';
 
-    printf("%c", to_upper(lower)); 
-    printf("%c", to_lower(upper)); 
+//     printf("%c", to_upper(lower)); 
+//     printf("%c", to_lower(upper)); 
 
-    printf("%c", switch_case(lower_two)); 
-    printf("%c", switch_case(upper_two)); 
+//     printf("%c", switch_case(lower_two)); 
+//     printf("%c", switch_case(upper_two)); 
 
-    printf("%c", to_upper(unchanged)); 
-    printf("%c", to_lower(unchanged)); 
-    printf("%c", switch_case(unchanged)); 
-}
+//     printf("%c", to_upper(unchanged)); 
+//     printf("%c", to_lower(unchanged)); 
+//     printf("%c", switch_case(unchanged)); 
+// }
