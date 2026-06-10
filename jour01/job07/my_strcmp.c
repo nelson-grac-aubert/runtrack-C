@@ -15,8 +15,22 @@ sont identiques, mais “c” est inférieur à “d” dans la table ASCII. */
 #include <stdio.h>
 
 int my_strcmp(char *string_a, char *string_b)
-{
+{   
+    int i = 0; // iterator
 
+    while (string_a[i]) 
+    {
+        if (string_a[i] < string_b[i])
+        {
+            return -1;
+        }
+        else if (string_a[i] > string_b[i])
+        {
+            return 1;
+        }
+        i++;
+    }
+    return 0;
 }
 
 int main() 
