@@ -13,4 +13,10 @@ int main()
     printf("Valeur de p, c'est a dire l'adresse memoire vers laquelle il pointe, a savoir celle de a : %p", (void*)p);
     
     return 0;
+
+    int *pp = &a; // Je pense que ca pointe sur p, donc vaut l'adresse de a
+    // int **pp = &p; // Je pense que ca pointe sur a, donc vaut 42
+
+    printf("étoile pépé = %p", *pp);
+    // printf("étoile étoile pépé = %p", **pp);
 }
