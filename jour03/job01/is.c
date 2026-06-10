@@ -13,7 +13,7 @@ is_upper.
 
 Fonctions utilisées : aucune. */
 
-#include <stdio.h>
+#include "is.h"
 
 int is_digit(char c) 
 {   
@@ -57,24 +57,24 @@ int is_print(char c)
     return 0;
 }
 
-int main() 
-{   
+// int main() 
+// {   
 
-    printf("%d\n", is_digit('1')); 
-    printf("%d\n", is_digit(' ')); 
+//     printf("%d\n", is_digit('1')); 
+//     printf("%d\n", is_digit(' ')); 
 
-    printf("%d\n", is_lower('a')); 
-    printf("%d\n", is_lower('A')); 
+//     printf("%d\n", is_lower('a')); 
+//     printf("%d\n", is_lower('A')); 
 
-    printf("%d\n", is_upper('A')); 
-    printf("%d\n", is_upper('a')); 
+//     printf("%d\n", is_upper('A')); 
+//     printf("%d\n", is_upper('a')); 
     
-    printf("%d\n", is_alpha('A')); 
-    printf("%d\n", is_alpha('a')); 
-    printf("%d\n", is_alpha(' ')); 
+//     printf("%d\n", is_alpha('A')); 
+//     printf("%d\n", is_alpha('a')); 
+//     printf("%d\n", is_alpha(' ')); 
 
-    printf("%d\n", is_print('a')); 
-    printf("%d\n", is_print(2)); 
+//     printf("%d\n", is_print('a')); 
+//     printf("%d\n", is_print(2)); 
 
-    return 0;
-}
+//     return 0;
+// }
